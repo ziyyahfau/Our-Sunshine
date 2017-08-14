@@ -30,16 +30,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initViewBaru() {
-//        mMainToday = (TextView) findViewById(R.id.txt_today);
-//        mMainWeather = (ImageView) findViewById(R.id.img_weather);
-//        mMainWeatherDesc = (TextView) findViewById(R.id.txt_weather_desc);
-//        mMainWTemperature = (TextView) findViewById(R.id.txt_temperature);
-//        mMainWeatherList = (RecyclerView) findViewById(R.id.rv_weather_list);
-//
-//        mMainToday.setText("MInggu");
-//        mMainWeather.setImageResource(R.mipmap.ic_weather);
-//        mMainWTemperature.setText("32 Derajat");
-//        mMainWeatherDesc.setText("Petir Siang Bolong");
+        mMainToday = (TextView) findViewById(R.id.textTanggal);
+        mMainWeather = (ImageView) findViewById(R.id.imgCloud);
+        mMainWeatherDesc = (TextView) findViewById(R.id.textStatus);
+        mMainWTemperature = (TextView) findViewById(R.id.textTemprature);
+        mMainWeatherList = (RecyclerView) findViewById(R.id.reviewList);
+
+        mMainToday.setText("Sunday");
+        mMainWeather.setImageResource(R.mipmap.ic_cloud);
+        mMainWTemperature.setText("32 Derajat");
+        mMainWeatherDesc.setText("Petir Siang Bolong");
 
         layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         mMainWeatherList.setLayoutManager(layoutManager);

@@ -10,14 +10,14 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="160dp"
-        android:padding="20dp"
+        android:padding="10dp"
         android:background="#ffdb4d">
 
         <TextView
             android:id="@+id/textTanggal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Minggu, 24 Mei 2017"
+            android:text="Sunday, 24 Mei 2017"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
             android:textColor="@color/colorWhite"
@@ -26,10 +26,10 @@
 
         <ImageView
             android:id="@+id/imgCloud"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:src="@mipmap/ic_cloud"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="5dp"
             android:layout_marginLeft="16dp"
             android:layout_below="@id/textTanggal"/>
 
@@ -37,10 +37,11 @@
             android:id="@+id/textStatus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/imgCloud"
             android:text="berawan"
-            android:layout_marginLeft="30dp"
-            android:textColor="@color/colorBlack"/>
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:layout_below="@id/imgCloud"/>
 
         <TextView
             android:id="@+id/textTemprature"
@@ -49,6 +50,7 @@
             android:layout_below="@+id/textTanggal"
             android:layout_toRightOf="@+id/imgCloud"
             android:gravity="right"
+            android:layout_marginRight="20dp"
             android:text="18"
             android:textColor="@color/colorBlack"
             style="@style/TextAppearance.AppCompat.Large"
